@@ -17,29 +17,31 @@
                 Text="RZUĆ KOŚCMI" 
                 HorizontalOptions="Center" 
                 BackgroundColor="Chocolate"
-                
+                Clicked="btnRzutClicked"
                 />
             <HorizontalStackLayout BackgroundColor="white" HorizontalOptions="Center">
-                <Image Source="empty.png" x:Name="ImgKosc1"/>
-                <Image Source="empty.png" x:Name="ImgKosc2"/>
-                <Image Source="empty.png" x:Name="ImgKosc3"/>
-                <Image Source="empty.png" x:Name="ImgKosc4"/>
-                <Image Source="empty.png" x:Name="ImgKosc5"/>
+                <Image Source="empty.png" x:Name="imgKosc1"/>
+                <Image Source="empty.png" x:Name="imgKosc2"/>
+                <Image Source="empty.png" x:Name="imgKosc3"/>
+                <Image Source="empty.png" x:Name="imgKosc4"/>
+                <Image Source="empty.png" x:Name="imgKosc5"/>
             </HorizontalStackLayout>
             <Label 
                 Text="Wynik tego losowania: 0" 
-                x:Name="LblWynikLos" 
+                x:Name="lblWynikLos" 
                 HorizontalTextAlignment="Center"
+                FontSize="40"
                 />
             <Label 
                 Text="Wynik całej gry: 0" 
-                x:Name="LblWynikGra" 
+                x:Name="lblWynikGra" 
                 HorizontalTextAlignment="Center"
                 />
             <Button 
                 Text="RESETUJ WYNIK" 
                 BackgroundColor="Chocolate" 
                 HorizontalOptions="Center"
+                Clicked="btnResetGraClicked"
                 />
         </VerticalStackLayout>
     </ScrollView>
